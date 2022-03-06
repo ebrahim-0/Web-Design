@@ -75,9 +75,13 @@ header .container nav ul li {
         text-align: center;
         flex-direction: column;
     }
+    header .container nav ul li a {
+        display: flex;
+    }
     header .container nav {
         margin-left: -50px;
         text-align: center;
+        position: relative;
     }
     header .container nav h1 {
         margin-bottom: 10px;
@@ -94,17 +98,25 @@ header .container nav ul li {
         justify-content: flex-end;
         align-items: flex-start;
         transform: translate(15px,-50px);
-        right: 60px;
+        right: 0px;
         position: absolute;
     }
     header .container nav .icon:hover + ul {
         display: block;
+        position: absolute;
+        background-color: #00000040;
+        width: 110%;
+        height: 120px;
+        margin: 12px;
+        top: -9px;
+        left: -20px;
+        z-index: 1;
+        transition: 0.3s;
     }
     header .container nav ul li {
         margin-bottom: 10px;
         display: flex;
         justify-content: flex-start;
-        
     }
 }
 .showcase {
